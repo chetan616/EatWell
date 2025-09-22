@@ -1,0 +1,36 @@
+<HomeScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        padding: 40
+        Label:
+            text: "EatWell"
+            font_size: 40
+        Button:
+            text: "Farmer"
+            on_release: app.root.current = 'farmer'
+        Button:
+            text: "Consumer"
+            on_release: app.root.current = 'consumer'
+
+<FarmerScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        padding: 40
+        Label:
+            text: "Farmer Portal (Product Listing, Analytics, etc.)"
+        Button:
+            text: "Back"
+            on_release: app.root.current = 'home'
+
+<ConsumerScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 20
+        padding: 40
+        Label:
+            text: "Consumer Portal (Browse, Search, Buy, etc.)"
+        Button:
+            text: "Back"
+            on_release: app.root.current = 'home'
